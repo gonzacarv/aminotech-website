@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
     myForm.addEventListener('submit', function (event) {
         event.preventDefault(); // Evitar que el formulario se envíe normalmente
 
-        const nombre = myForm.querySelector('[name="nombre"]').value;
+        const nombre = myForm.querySelector('[name="name"]').value;
         const email = myForm.querySelector('[name="email"]').value;
-        const asunto = myForm.querySelector('[name="asunto"]').value;
-        const mensaje = myForm.querySelector('[name="mensaje"]').value;
+        const asunto = myForm.querySelector('[name="subject"]').value;
+        const mensaje = myForm.querySelector('[name="message"]').value;
 
-        if (!nombre || !email || !asunto || !mensaje) {
+        if (!name || !email || !subject || !message) {
             // Si algún campo está vacío, muestra un mensaje de error
             Swal.fire({
                 title: 'Error',
@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             // Si todos los campos están llenos, muestra un mensaje de éxito
             Swal.fire({
-                imageUrl: "img/logo-head.png",
+                imageUrl: "img/logo.png",
                 title: '¡Enviado!',
-                text: 'Gracias por tu mensaje.',
+                text: 'Te contactaremos a la brevedad',
                 icon: 'success',
                 confirmButtonText: 'OK',
                 customClass: {
