@@ -366,3 +366,15 @@
     }
 }
 
+@media (max-width: 575.98px) {
+    .section-image {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor en móviles */
+        max-width: 200px; /* Ajusta el tamaño máximo según sea necesario */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+    .col-md-2 {
+        text-align: center; /* Asegura que las imágenes estén centradas */
+        margin-bottom: 1rem; /* Añade espacio debajo de las imágenes en móviles */
+    }
+}
