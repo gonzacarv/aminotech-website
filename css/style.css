@@ -328,3 +328,27 @@
     color: var(--primary);
 }
 
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 575.98px) {
+    .navbar {
+        display: flex; /* Asegura que la navbar use Flexbox */
+        align-items: center; /* Centra verticalmente el contenido de la navbar */
+        justify-content: space-between; /* Espacia el logo y el botón de menú */
+        padding-left: 15px; /* Reduce el padding para dar más espacio */
+        padding-right: 15px; /* Reduce el padding para dar más espacio */
+    }
+
+    .navbar-brand img {
+        max-width: 120px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+        height: auto; /* Mantiene las proporciones del logo */
+    }
+
+    .navbar-toggler {
+        margin-right: 0; /* Elimina el margen derecho del botón de menú */
+        padding: 0.25rem 0.5rem; /* Reduce el padding del botón para que sea más compacto */
+    }
+
+    .navbar-nav {
+        margin-top: 0; /* Elimina cualquier margen superior que cause desplazamiento */
+    }
+}
