@@ -339,7 +339,7 @@
     }
 
     .navbar-brand img {
-        max-width: 200px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+        max-width: 250px; /* Ajusta el tamaño del logo en pantallas pequeñas */
         height: auto; /* Mantiene las proporciones del logo */
     }
 
@@ -350,5 +350,18 @@
 
     .navbar-nav {
         margin-top: 0; /* Elimina cualquier margen superior que cause desplazamiento */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-caption {
+        text-align: center; /* Centra el texto dentro del carrusel */
+        padding-left: 8px; /* Agrega un pequeño padding para asegurar el espaciado adecuado */
+        padding-right: 8px; /* Agrega un pequeño padding para asegurar el espaciado adecuado */
+    }
+
+    .carousel-caption h1, .carousel-caption h3, .carousel-caption a {
+        margin: 0 auto; /* Centra el contenido del texto */
+        display: block; /* Asegura que los elementos se dispongan en bloques */
     }
 }
