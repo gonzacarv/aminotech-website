@@ -339,7 +339,7 @@
     }
 
     .navbar-brand img {
-        max-width: 120px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+        max-width: 200px; /* Ajusta el tamaño del logo en pantallas pequeñas */
         height: auto; /* Mantiene las proporciones del logo */
     }
 
