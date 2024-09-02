@@ -378,3 +378,9 @@
         margin-bottom: 1rem; /* Añade espacio debajo de las imágenes en móviles */
     }
 }
+@media (max-width: 575.98px) {
+    .hide-on-mobile {
+      display: none !important; /* Oculta las imágenes en pantallas de 575.98px o menos */
+    }
+  }
+  
