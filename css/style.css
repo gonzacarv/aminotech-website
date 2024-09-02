@@ -365,3 +365,20 @@
         display: block; /* Asegura que los elementos se dispongan en bloques */
     }
 }
+
+@media (max-width: 575.98px) {
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-2 {
+        margin-bottom: 1rem; /* Añade espacio debajo de las imágenes en móviles */
+        text-align: center; /* Asegura que las imágenes estén centradas */
+    }
+
+    .img-fluid {
+        width: 100%; /* Asegura que las imágenes usen todo el ancho disponible */
+        max-width: 200px; /* Ajusta este tamaño según sea necesario */
+    }
+}
