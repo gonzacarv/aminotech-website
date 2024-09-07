@@ -383,4 +383,74 @@
       display: none !important; /* Oculta las imágenes en pantallas de 575.98px o menos */
     }
   }
+
+
   
+/* Ocultar el contenido inicialmente */
+.hidden-content {
+    display: none;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Ocultar el checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Estilos para la etiqueta que actúa como botón */
+.toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff; 
+    background: #03975f; 
+    padding: 5px 10px;
+    margin-top: 10px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggle-label::after {
+    content: "Más";
+}
+
+/* Cambiar el texto cuando el checkbox está marcado */
+.toggle-checkbox:checked + .toggle-label::after {
+    content: "Menos";
+}
+
+/* Mostrar el contenido cuando el checkbox está marcado */
+.toggle-checkbox:checked ~ .hidden-content {
+    display: block;
+}
+
+/* Opcional: cambiar el color de fondo del botón al pasar el cursor */
+.toggle-label:hover {
+    background: #e46b46;
+}
+
+
+.bg-hacemos{
+    background-color:rgba(255, 255, 255, 0.1);   
+}
+
+.bg-ventaja{
+    background-color:rgba(255, 255, 255, 0.1);  
+}
+
+.img-ventaja{
+    width: 100%;
+    height: 100%;
+    
+}
+
+ul.text-white strong {
+    text-transform: uppercase; 
+    font-weight:500 
+}
+
+.desarrollo-title {
+    text-transform: uppercase; 
+    color: #c8ffee;    
+}
+
