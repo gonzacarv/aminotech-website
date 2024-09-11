@@ -454,3 +454,12 @@ ul.text-white strong {
     color: #c8ffee;    
 }
 
+.li-qh {
+    list-style: none; /* Elimina las viñetas */
+    padding-left: 0;  /* Elimina el padding por defecto del ul */
+    margin-bottom: 10px; /* Opcional: Añade un margen inferior entre los elementos de la lista para mejorar la legibilidad */           
+    }
+    
+
+
+

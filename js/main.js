@@ -76,3 +76,23 @@ window.addEventListener('scroll', checkScroll);
 
 // Llama a la función inicialmente para comprobar el estado al cargar la página
 checkScroll();
+
+
+//QUE SE ESCONDA EL MENU EN LA VERSION MOBILE
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link'); // Seleccionamos los enlaces del menú
+    const navbarCollapse = document.querySelector('.navbar-collapse'); // Seleccionamos el contenedor colapsable
+
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            const isNavbarTogglerVisible = window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none';
+            
+            // Si el botón del menú hamburguesa es visible (es decir, estamos en mobile), cerramos el menú
+            if (isNavbarTogglerVisible) {
+                navbarCollapse.classList.remove('show'); // Ocultamos el menú desplegable
+                document.querySelector('.navbar-toggler').setAttribute('aria-expanded', 'false'); // Actualizamos el estado del botón
+            }
+        });
+    });
+});
+
